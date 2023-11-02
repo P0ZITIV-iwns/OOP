@@ -1,0 +1,13 @@
+{
+    "name": "giphyrii/task9",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/PointFunctions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

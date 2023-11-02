@@ -1,0 +1,13 @@
+{
+    "name": "giphyrii/task12",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/SegmentFunctions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
