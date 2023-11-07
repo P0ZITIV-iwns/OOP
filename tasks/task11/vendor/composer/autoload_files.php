@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '54a744e052515bb42a50967146040ed8' => $baseDir . '/src/PointFunctions.php',
+    '54a744e052515bb42a50967146040ed8' => $baseDir . '/src/UserFunctions.php',
 );

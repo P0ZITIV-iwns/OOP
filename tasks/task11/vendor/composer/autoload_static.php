@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInitc73be021fe70992ae9df59b1df515a88
 {
     public static $files = array (
-        '54a744e052515bb42a50967146040ed8' => __DIR__ . '/../..' . '/src/PointFunctions.php',
+        '54a744e052515bb42a50967146040ed8' => __DIR__ . '/../..' . '/src/UserFunctions.php',
     );
 
     public static $prefixLengthsPsr4 = array (

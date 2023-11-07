@@ -1,20 +1,19 @@
 <?php
 namespace App;
 
-use App\User\Address;
-
 class User
 {
     public $name;
+    public $addresses = [];
     public function __construct(string $name)
     {
         $this->name = $name;
     }
-    public function addAddress(User\Address $address): array
+    public function addAddress(User\Address $address): void
     {
         $this->addresses[] = $address;
     }
-    public function getAddresses(): string
+    public function getAddresses(): array
     {
         return $this->addresses;
     }

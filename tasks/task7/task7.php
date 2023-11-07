@@ -1,23 +1,30 @@
 <?php 
-function make($url){
+function make($url)
+{
     return parse_url($url);
 }
-function setScheme(&$data, $scheme){
+function setScheme(&$data, $scheme)
+{
     $data['scheme'] = $scheme;
 }
-function getScheme($data){
+function getScheme($data)
+{
     return $data['scheme'];
 }
-function setHost(&$data, $host){
+function setHost(&$data, $host)
+{
     $data['host'] = $host;
 }
-function getHost($data){
+function getHost($data)
+{
     return $data['host'];
 }
-function setPath(&$data, $path){
+function setPath(&$data, $path)
+{
     $data['path'] = $path;
 }
-function getPath($data){
+function getPath($data)
+{
     return $data['path'];
 } 
 function setQueryParam(&$data, $key, $value)
@@ -40,8 +47,8 @@ function toString(&$data)
     return isset($data['query']) ? "{$scheme}://{$host}{$path}?{$query}" : "{$scheme}://{$host}{$path}";
 }
 
-$url = make('https://ht.io/community?q=low');
-print ('https://ht.io/community?q=low' === toString($url)) ? "true" : "false";
+$url = make('ht.io/community?q=low');
+print ('ht.io/community?q=low' === toString($url)) ? "true" : "false";
 print "<br>";
 print ('https' === getScheme($url)) ? "true" : "false";
 print "<br>";

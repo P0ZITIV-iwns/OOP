@@ -13,5 +13,8 @@ function getMidpoint(Point $point1, Point $point2): Point
 
 function dup(Point $point): Point
 {
-    return clone $point;
+    $newPoint = new Point();
+    $newPoint->x = $point->x;
+    $newPoint->y = $point->y;
+    return $newPoint;
 }

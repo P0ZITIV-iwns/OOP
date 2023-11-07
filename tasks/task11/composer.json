@@ -5,7 +5,7 @@
             "App\\": "src/"
         },
         "files": [
-            "src/PointFunctions.php"
+            "src/UserFunctions.php"
         ]
     },
     "minimum-stability": "dev",

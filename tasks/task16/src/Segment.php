@@ -1,4 +1,5 @@
 <?php
+
 namespace App;
 use App\Point;
 
@@ -12,8 +13,18 @@ class Segment
         $this->endPoint = $endPoint;
     }
 
+    public function getBeginPoint(): Point
+    {
+        return $this->beginPoint;
+    }
+
+    public function getEndPoint(): Point
+    {
+        return $this->endPoint;
+    }
+
     public function __toString(): string
     {
-        return "[(x: {$this->beginPoint->x}, y: {$this->beginPoint->y}), (x: {$this->endPoint->x}, y: {$this->endPoint->y})]";
+        return "[{$this->beginPoint}, {$this->endPoint}]";
     }
 }
