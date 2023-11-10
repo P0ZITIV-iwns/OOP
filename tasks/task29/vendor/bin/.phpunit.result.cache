@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\DeckOfCardsTest::testGetShuffled1":4,"App\\Tests\\DeckOfCardsTest::testGetShuffled2":4},"times":{"App\\Tests\\DeckOfCardsTest::testGetShuffled1":0.011,"App\\Tests\\DeckOfCardsTest::testGetShuffled2":0}}

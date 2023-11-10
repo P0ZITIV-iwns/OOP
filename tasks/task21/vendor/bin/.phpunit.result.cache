@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\SafeTest::testJsonDecode1":4,"App\\Tests\\SafeTest::testJsonDecode2":3},"times":{"App\\Tests\\SafeTest::testJsonDecode1":0.001,"App\\Tests\\SafeTest::testJsonDecode2":0}}
