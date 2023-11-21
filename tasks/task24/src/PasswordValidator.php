@@ -18,11 +18,20 @@ class PasswordValidator
     {
         $errors = [];
 
+        $containsNumber = false;
+
+        for ($i = 0; $i < strlen($password); $i++) {
+            if (strcmp($password[$i], '0') >= 0 && strcmp($password[$i], '9') <= 0) {
+                $containsNumber = true;
+                break;
+            }
+        }
+
         if (strlen($password) < $this->options['minLength']) {
             $errors['minLength'] = 'too small';
         }
 
-        if ($this->options['containNumbers'] && !preg_match('/\d/', $password)) {
+        if ($this->options['containNumbers'] && !$containsNumber) {
             $errors['containNumbers'] = 'should contain at least one number';
         }
 

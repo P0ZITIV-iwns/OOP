@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\InMemoryKVTest::testSetGet":4,"App\\Tests\\KeyValueFunctionsTest::testSetGet":4,"App\\Tests\\KeyValueFunctionsTest::testSwap":4},"times":{"App\\Tests\\FileKVTest::testSetGet":0.005,"App\\Tests\\InMemoryKVTest::testSetGet":0,"App\\Tests\\KeyValueFunctionsTest::testSetGet":0,"App\\Tests\\KeyValueFunctionsTest::testSwap":0}}

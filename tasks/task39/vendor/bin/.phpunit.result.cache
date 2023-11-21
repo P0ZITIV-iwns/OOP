@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\DatabaseConfigLoaderTest::testLoad1":4,"App\\Tests\\DatabaseConfigLoaderTest::testLoad2":4,"App\\Tests\\DatabaseConfigLoaderTest::testLoadWithExtend":4},"times":{"App\\Tests\\DatabaseConfigLoaderTest::testLoad1":0.003,"App\\Tests\\DatabaseConfigLoaderTest::testLoad2":0,"App\\Tests\\DatabaseConfigLoaderTest::testLoadWithExtend":0}}
