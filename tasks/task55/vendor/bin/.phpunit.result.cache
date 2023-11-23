@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\SmartSplFileInfoTest::testGetSize":4,"App\\Tests\\SmartSplFileInfoTest::testException":3},"times":{"App\\Tests\\SmartSplFileInfoTest::testGetSize":0.003,"App\\Tests\\SmartSplFileInfoTest::testException":0}}
