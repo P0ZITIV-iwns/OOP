@@ -6,12 +6,12 @@ class Square
 {
     private $side;
 
-    public function __construct($side)
+    public function __construct(int $side)
     {
         $this->side = $side;
     }
 
-    public function getSide()
+    public function getSide(): int
     {
         return $this->side;
     }

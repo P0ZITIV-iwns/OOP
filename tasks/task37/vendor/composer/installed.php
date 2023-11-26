@@ -69,7 +69,7 @@
         'phpunit/php-code-coverage' => array(
             'pretty_version' => '9.2.x-dev',
             'version' => '9.2.9999999.9999999-dev',
-            'reference' => '00bc23209e885ae1aab33c9a2303b0eb8ebd5c28',
+            'reference' => '8a0594028f23e82f11083a4c1aafd7b2dcb8f5dc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/php-code-coverage',
             'aliases' => array(),
@@ -114,7 +114,7 @@
         'phpunit/phpunit' => array(
             'pretty_version' => '9.6.x-dev',
             'version' => '9.6.9999999.9999999-dev',
-            'reference' => 'd492067162cc3685ef35452e6ac02bd09744aa95',
+            'reference' => '5dafcd8dd0f39f3fa2141f732de9810f73d20a17',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -266,6 +266,24 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'symfony/polyfill-mbstring' => array(
+            'pretty_version' => '1.x-dev',
+            'version' => '1.9999999.9999999.9999999-dev',
+            'reference' => '42292d99c55abe617799667f454222c54c60e229',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/var-dumper' => array(
+            'pretty_version' => '6.0.x-dev',
+            'version' => '6.0.9999999.9999999-dev',
+            'reference' => 'eb980457fa6899840fe1687e8627a03a7d8a3d52',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/var-dumper',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.2',
             'version' => '1.2.2.0',
@@ -274,6 +292,15 @@
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'tightenco/collect' => array(
+            'pretty_version' => 'v9.52.7',
+            'version' => '9.52.7.0',
+            'reference' => 'b15143cd11fe01a700fcc449df61adc64452fa6d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tightenco/collect',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
     ),
 );

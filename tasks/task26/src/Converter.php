@@ -4,11 +4,11 @@ namespace App\Converter;
 
 function toStd($array)
 {
-    $obj = new \stdClass();
+    $std = new \stdClass();
 
     foreach ($array as $key => $value) {
-        $obj->$key = $value;
+        $std->$key = $value;
     }
 
-    return $obj;
+    return $std;
 }

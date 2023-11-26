@@ -38,6 +38,6 @@ class InMemoryKV implements KeyValueStorageInterface
 
     public function unserialize($data)
     {
-        $this->map = json_decode($data, true);
+        $this->map = json_decode($data, associative: true);
     }
 }

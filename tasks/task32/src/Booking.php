@@ -4,28 +4,26 @@ namespace App;
 
 class Booking
 {
-    private $bookedDates = [];
+    private array $books = [];
 
-    public function book($checkInDate, $checkOutDate)
+    public function book(string $dateFrom, string $dateTo): bool
     {
-        $checkIn = strtotime($checkInDate);
-        $checkOut = strtotime($checkOutDate);
-
-        if ($checkOut <= $checkIn) {
+        $dateFrom = strtotime($dateFrom);
+        $dateTo = strtotime($dateTo);
+        if ($dateTo <= $dateFrom) {
             return false; // Проверка на корректные даты: выезд должен быть после заезда
         }
-
-        foreach ($this->bookedDates as $booked) {
-            [$bookedCheckIn, $bookedCheckOut] = $booked;
-
+        foreach ($this->books as $book) {
             // Проверка на пересечение забронированных дат
-            if (!($checkOut <= $bookedCheckIn || $checkIn >= $bookedCheckOut)) {
+            if ($dateTo > $book['dateFrom'] && $dateFrom < $book['dateTo']) {
                 return false; // Есть пересечение дат - бронирование невозможно
             }
         }
-
         // Бронирование возможно, добавляем новую забронированную дату
-        $this->bookedDates[] = [$checkIn, $checkOut];
+        $this->books[] = [
+            'dateFrom' => $dateFrom,
+            'dateTo' => $dateTo
+        ];
         return true;
     }
 }

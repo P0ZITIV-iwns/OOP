@@ -2,16 +2,15 @@
 
 namespace App\KeyValueFunctions;
 
-function swapKeyValue($storage)
+function swapKeyValue($objectDatabase)
 {
-    $data = $storage->toArray();
-    $flippedData = array_flip($data);
+    $flippedObjectDatabase = array_flip($objectDatabase->toArray());
 
-    foreach ($data as $key => $value) {
+    foreach ($objectDatabase as $key => $value) {
         $storage->unset($key);
     }
 
-    foreach ($flippedData as $key => $value) {
-        $storage->set($key, $value);
+    foreach ($flippedObjectDatabase as $key => $value) {
+        $objectDatabase->set($key, $value);
     }
 }

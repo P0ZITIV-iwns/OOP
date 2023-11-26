@@ -6,16 +6,10 @@ use App\Node;
 
 function reverse(Node $list): Node
 {
-    $prev = null;
-    $current = $list;
-    $next = null;
-
-    while ($current !== null) {
-        $next = $current->getNext();
-        $current->next = $prev;
-        $prev = $current;
-        $current = $next;
+    $reversedList = null;
+    while ($list) {
+        $reversedList = new Node($list->getValue(), $reversedList);
+        $list = $list->getNext();
     }
-
-    return $prev;
+    return $reversedList;
 }

@@ -10,12 +10,7 @@ class User
     public function __construct($email, $currentSubscription = null)
     {
         $this->email = $email;
-        if ($currentSubscription === null) {
-            $this->currentSubscription = new FakeSubscription($this);
-        } else {
-            $this->currentSubscription = $currentSubscription;
-        }
-        
+        $this->currentSubscription = $currentSubscription ? $currentSubscription : new FakeSubscription($this);
     }
 
     public function getCurrentSubscription()

@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"App\\Tests\\NormalizerTest::testNormalize":0.001,"App\\Tests\\NormalizerTest::testNormalize2":0}}
+{"version":1,"defects":{"App\\Tests\\NormalizerTest::testNormalize":4,"App\\Tests\\NormalizerTest::testNormalize2":4},"times":{"App\\Tests\\NormalizerTest::testNormalize":0.003,"App\\Tests\\NormalizerTest::testNormalize2":0}}

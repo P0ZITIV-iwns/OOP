@@ -4,24 +4,22 @@ namespace App\Comparator;
 
 use Ds\Stack;
 
-function compare($seq1, $seq2)
+function compare(string $seq1, string $seq2): bool
 {
     return getRealString($seq1) === getRealString($seq2);
 }
 
-function getRealString($sequence)
+function getRealString(string $sequence): string
 {
     $stack = new Stack();
 
     for ($i = 0; $i < strlen($sequence); $i++) {
-        if ($sequence[$i] === '#') {
-            if (!$stack->isEmpty()) {
-                $stack->pop();
-            }
-        } else {
+        if ($sequence[$i] !== '#') {
             $stack->push($sequence[$i]);
+        } elseif (!$stack->isEmpty()) {
+            $stack->pop();
         }
     }
 
-    return implode('', iterator_to_array($stack));
+    return implode('', $stack->toArray());
 }

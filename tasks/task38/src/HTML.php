@@ -8,10 +8,12 @@ function stringify($tag) {
     $body = $tag['body'] ?? '';
     $attributes = collect($tag)
             ->except(['name', 'tagType', 'body'])
-            ->map(fn($value, $key) => " $key=\"$value\"")
-            ->implode('');
-    if ($tagType === 'single') {
-        return "<$name$attributes>";
+            ->map(fn($value, $key) => "$key=\"$value\"")
+            ->implode(' ');
+    switch ($tag['tagType']) {
+        case 'single':
+            return "<$name" . ($attributes ? " " : "") . $attributes . ">";
+        case 'pair':
+            return "<$name" . ($attributes ? " " : "") . $attributes . ">" . $body . "</$name>";
     }
-    return "<$name$attributes>$body</$name>";
 }

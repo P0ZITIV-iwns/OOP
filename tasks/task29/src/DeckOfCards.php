@@ -15,11 +15,11 @@ class DeckOfCards
 
     public function getShuffled(): array
     {
-        // Создаем колоду карт, где каждая карта встречается 4 раза
         $fullDeck = collect($this->cards)
-            ->flatMap(function ($card) {
+            ->map(function ($card) {
                 return [$card, $card, $card, $card];
             })
+            ->flatten()
             ->shuffle()
             ->all();
         return $fullDeck;

@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"App\\Tests\\InMemoryKVTest::testSetGet":0.013,"App\\Tests\\InMemoryKVTest::testSerializeUnserialize":0}}
+{"version":1,"defects":[],"times":{"App\\Tests\\InMemoryKVTest::testSetGet":0.055,"App\\Tests\\InMemoryKVTest::testSerializeUnserialize":0.001}}
